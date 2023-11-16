@@ -1,4 +1,4 @@
-﻿asttokens==2.4.1
+asttokens==2.4.1
 colorama==0.4.6
 comm==0.1.4
 debugpy==1.8.0
