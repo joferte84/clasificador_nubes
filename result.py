@@ -9,7 +9,7 @@ def result():
     st.lottie(lottie_url, width=650, height=300)
     st.write("La pestaña `Resultados` es donde el rigor científico se fusiona con la visualización creativa. En este espacio, presentamos una serie de gráficas que capturan la esencia del rendimiento de nuestro modelo de Machine Learning. Cada visualización está diseñada para ofrecerte una visión clara y detallada de cómo nuestro clasificador de nubes procesa y evalúa los datos. Aquí, encontrarás desde la precisión y la eficiencia hasta la efectividad global del modelo, representadas en formatos que hacen que la interpretación de los resultados sea tan accesible como fascinante. Prepárate para explorar la interacción entre los fenómenos naturales y la capacidad analítica de la inteligencia artificial, todo presentado a través de una lente que realza tanto la funcionalidad técnica como la belleza visual de nuestro trabajo.")
     
-    tab1, tab2, tab3 = st.tabs(["Curva de Aprendizaje", "Métricas", "Matriz de Relación"])
+    tab1, tab2, tab3 = st.tabs(["Curva de Aprendizaje", "Métricas", "Matriz de Confusión"])
     
     with tab1:
         st.write("Estas gráficas muestran la pérdida y la precisión del modelo a lo largo de las épocas de entrenamiento para los conjuntos de entrenamiento y validación.")
