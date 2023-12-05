@@ -40,9 +40,9 @@ def menu(idioma='es'):
     textos = obtener_textos(st.session_state['idioma'])
     
     st.title(textos['titulo'])
-    st.write(textos['intro'])
     add_vertical_space(2)
-
+    st.write(textos['intro'])
+    
     st.write("Sugar :ice_cream:, Gravel :umbrella_on_ground:, Flower :hibiscus: y Fish :fish:")
     
     selected_tab = st.sidebar.radio(textos['selecciona_nube'], textos['nubes'])
@@ -71,14 +71,11 @@ def menu(idioma='es'):
     if selected == "EDA":
         eda(idioma=st.session_state['idioma'])
         
-
     elif selected == "Machine Learning":
         ml(idioma=st.session_state['idioma'])
-
         
     if selected == "Resultados":
         result(idioma=st.session_state['idioma'])
 
 if __name__ == "__menu__":
     menu()
-
