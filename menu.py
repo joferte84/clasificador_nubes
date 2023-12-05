@@ -29,6 +29,10 @@ textos_en = {
     'nubes': ("Sugar :ice_cream:", "Gravel :umbrella_on_ground:", "Flower :hibiscus:", "Fish :fish:")
 }
 
+textos_es['opciones_menu'] = ["Análisis Exploratorio de Datos", "Aprendizaje Automático", "Resultados"]
+textos_en['opciones_menu'] = ["Exploratory Data Analysis", "Machine Learning", "Results"]
+
+
 def obtener_textos(idioma):
     return textos_es if idioma == 'es' else textos_en
 
@@ -61,20 +65,20 @@ def menu(idioma='es'):
         
     add_vertical_space(2)
     
-    selected = option_menu(
-    menu_title=None,
-    options=["EDA","Machine Learning", "Resultados"],
-    icons=["clipboard-data", "boxes", "card-checklist"],
-    default_index=0,
-    orientation="horizontal")
+    selected = option_menu(menu_title=None,
+                            options=textos['opciones_menu'],
+                            icons=["clipboard-data", "boxes", "card-checklist"],
+                            default_index=0,
+                            orientation="horizontal"
+    )
     
-    if selected == "EDA":
+    if selected == textos['opciones_menu'][0]:  
         eda(idioma=st.session_state['idioma'])
         
-    elif selected == "Machine Learning":
+    elif selected == textos['opciones_menu'][1]: 
         ml(idioma=st.session_state['idioma'])
         
-    if selected == "Resultados":
+    elif selected == textos['opciones_menu'][2]:  
         result(idioma=st.session_state['idioma'])
 
 if __name__ == "__menu__":
