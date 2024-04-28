@@ -19,7 +19,7 @@ pip install -r requirements.txt
 streamlit run main.py
 ```
 ### Uso
-Para usar el clasificador de nubes, carga tus imágenes de nubes a través de la interfaz de línea de comandos. El sistema procesará y clasificará las imágenes, mostrando los resultados.
+Para usar el clasificador de nubes, elige alguna de las imágenes del desplegable. El sistema procesará la imagen y clasificará las imágenes, mostrando los resultados.
 
 ### Contribuir
 Si tienes sugerencias para mejorar este clasificador, no dudes en forkear el repositorio y enviar un pull request, o abrir un issue con tus comentarios y sugerencias.
