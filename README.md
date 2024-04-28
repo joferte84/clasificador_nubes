@@ -16,7 +16,7 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
 git clone https://github.com/joferte84/clasificador_nubes
 cd clasificador_nubes
 pip install -r requirements.txt
-streamlit run main.py
+streamlit run menu.py
 ```
 ### Uso
 Para usar el clasificador de nubes, elige alguna de las imágenes del desplegable. El sistema procesará la imagen y clasificará las imágenes, mostrando los resultados.
